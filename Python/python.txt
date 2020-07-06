@@ -1,0 +1,278 @@
+﻿1)What is the Python....?
+  Python is highlevel Programing language and Object Oriented & Functional Programing 
+  language.it was created by the Guido van Rossum in 1991. this name is came from a
+  popular comedy show in BBC channel. the name Monty Python Curcus.
+  so it's come in 2 vessions
+  Python 2 & 3
+ the main differnce between the this two is python 3 is not having backward compatability for p2
+  
+  1.1)what is the difference between the OOP&FP..?
+  
+  
+
+2)Why i have to chose the python & why python is more popular...?
+what is scope of python...?
+
+
+
+
+
+
+Characteristics of Python:
+
+Following are important characteristics of Python Programming −
+
+It supports functional and structured programming lng as well as OOP.
+
+It can be used as a scripting language or can be compiled to byte-code for building large applications.
+
+It provides very high-level dynamic data types and supports dynamic type checking.
+
+It supports automatic garbage collection.
+
+It can be easily integrated with C, C++, COM, ActiveX, COBRA, and Java.
+
+
+3)what are features of the Python...?
+
+3.1)Easy:
+    TO learn the python is very easy because of it simplicity in writing the syntax.
+	
+3.2)Free and OpenSource:
+    No  need to buy the licence.and also have it is free to use and supported by large
+	number of python communities. 
+	
+3.3)Interpreted: 
+The translation of single statement of source program into machine code is done by 
+language processor and executes it immediately before moving on to the next line is
+called an interpreter. If there is an error in the statement, the interpreter terminates
+its translating process at that statement and displays an error message. The interpreter 
+moves on to the next line for execution only after removal of the error. An Interpreter directly
+executes instructions written in a programming or scripting language without previously converting 
+them to an object code or machine code.
+Example: Perl, Python and Matlab.   
+	
+3.4)Portble:
+   You can run Python on Windows, Mac, Linux or any other platform.
+   
+3.5)Object-Oriented:
+    It supports classes and objects.   
+	
+3.6) GUI Programming:
+    You can use python to develop graphical user interface using dia
+3.7)Large Library
+   Python provides you with a large standard library. Many academic
+   institutions and scientific communities has developed large number of libraries
+   which can use to apply for almost all the problems.	
+   
+   
+   
+
+4)What are the benifits of python..?
+ 1)well testable code.
+ 2)well maintailble code(because less code more functinality)
+ 3)open source
+ 4)lots of frame works for developing applications 
+ 5)easy intigration with other technologies.
+ To many frameworks provided by python for different applications..
+ex:
+1)Djongo:
+  Djongo is the one of the python framework.it's privide the high level open source 
+  for developing the web applications.it's take care of hassel of web development.
+  so we can concetrate on your bussiness login.no need write the boiler plate code.
+  
+2)Tornodo:
+ it also desined for the webdevelopment.this will provide the high scalebility,
+ and high perfomance.
+
+3)Flask:
+ this one also one of the pyton frame work for the web development.but sight different 
+ then campare to others.it's does not need any certian tools and libraries.and also
+ no need form validation,or data abstarction layer.you can make use extensions to
+ add extra features.
+ clients:Linkedin,pintereste
+ 
+ 
+ ex:pyramid,Bottle,Numpy,Scipy..like
+ 
+
+What are the Application we can Develop by using python...?
+Console application 
+web Applications
+ImageProcessing
+DataAnalysis
+Games
+
+
+
+
+
+
+)How to Download the Python..?
+https://www.python.org/downloads/
+1.go to downloads and install the python.please select the OS.
+2.set the class path.....
+3.open the command line and type :pip install spyder
+===================================================================
+Different types of the IDE for python
+
+   KOMODO IDE 
+   PYDEV ON ECLIPSE
+   BLUEFISH 
+   VIM
+   gogle colob
+   pycharm
+  ==== ======================================================================
+Drawbacks of the Python:
+ 1)Python is very slow compared to java.Java is giving the better performance 
+   then pyhton.because pyhton is interpreted.
+ 2)Its'not suitable for the developing the mpbile Applications.because it's like 
+   weak while deleveloping mobile computing Applications.
+   ex:Carbonnelle.
+
+3)Python has limitations with database access . 
+As compared to the popular technologies like JDBC and ODBC, the Python's database
+access layer is found to be bit underdeveloped and primitive . However, it 
+cannot be applied in the enterprises that need smooth interaction of complex 
+legacy data .
+
+4)Python Memory consumption is also high.because it's flexbility of datatypes.
+
+5)it's not suitble for to Develop large Enterprice Applications
+
+6)it's RunTime errors.because pyhton developers need to write more test cases in run time for
+  developing the python language .because of it's dynamic datatypes. 
+  
+Advantages :
+1)Beginner's Language
+2)Simple and Easy to Learn
+3)Interpreted Language
+4)Cross-platform language
+5)Free and Open Source
+6)Object-Oriented language
+7)Extensive Libraries
+8)Integrated  
+ 
+
+==============================================================================
+ commants 
+  1)Single line comments
+  
+  ex:#this is single level comments
+  
+  
+  
+  2)Multiline comments
+  ex:''' multilevel comments '''
+  ===================================================================
+  Statements:
+  1)statements in python are nothing but logical line
+  
+  
+  myclg="VWC"
+======================================================================  
+Veraiables:
+
+The variable is name used to refer the memory location.Veriable can also known as
+Identifiers.it can hold some value.
+Pyhton has some rules to write the Identifiers.before writing the veariable we 
+have to follow the rules.
+
+To assign the data to the veriable we have to use the assignment operator like(=)    
+  
+ In python we can assign variable in different ways.
+ 
+ 1)Assigning the single value to multiple vaeribles:
+ ex:
+ a=b=c=50;
+ print(a)
+ print(b)
+ print(c)
+  
+ 2)Assigning the Multiple values to multiple Variables 
+  
+  a,b,c=1,2,3
+  print(a)
+  print(b)
+  print(c)
+Python Variables
+Gobal variables:
+Global variables are declared in out side of the method and inside of the class
+we call them as Global variables.we can use it in functions.
+ex:
+
+           Class Test:
+           name="ram"
+           def test():
+               print(name)
+           test()  
+
+case1:
+name="ram"
+def test():
+ name="rg"
+ print(name)
+test()
+print(name)
+o/p:rg
+    ram
+	
+case2:
+ name="ram"
+ def test():
+ print(s)
+ name="rg"
+ print(s)
+test()
+print(s)
+o/p:Error....unreferenced local 
+
+
+case3:
+ def test():
+ global s
+ s=234
+test()
+print(s)
+
+case4:
+ a=11
+ def test1():
+ print("inside test1",a)
+ def test2():
+ a=23
+ print("inside test2",a)
+ def test3():
+ global a
+ a=234
+ print("inside test3",a)
+test1()
+test2()
+test3()
+
+
+
+  
+
+
+
+
+
+local varibles
+  
+ ========================================================================= 
+  
+Python Datatypes: 
+built in data types:  
+1)numaric:int,float,complex
+2)text:str
+3)sequence:list,tuple,range
+4)mapping:dict
+5)set type:set,frozenset
+6)boolean :bool
+7)binary: bytes, byteArray,memoryview
+ 
+ 
+   
+   
+  

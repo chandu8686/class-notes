@@ -1,0 +1,28 @@
+Opps Concept is nothing but every thing is in the form of the object .
+                             (or)
+In other words it can be defined as the a program is developed on the  base of the object is called (or)
+The object orirnted is the programic way that means every thing will be developed in the form  the object only 
+so then most of the priraty is given to the objects only
+
+
+ class x{
+public void m1(){
+System.out.println("this methos from the x class");
+
+}
+}
+ class y extends  x{
+ 
+ public void m2(){
+
+ System.out.println("this m2 method from the y class");
+ }
+ }
+ 
+  class c extends y{
+  public static void main(Strings[]args){
+   C c=new c();
+   c.m1();
+   c.m2()
+   }
+   }

@@ -1,0 +1,50 @@
+Interoduction Of Servlets:
+By using the Java we can develop the different Types of the applications like
+1)Stand Alone Applications
+2)MobileApplications
+3)Applets
+4)web applications
+======================================================
+StandAloneApplications:
+The Application can be executed in the context of a single mechine are called 
+ StandAlone Application.
+ 
+ DraBacks:
+ it is initilized in the client mechine.
+ the logic and data in the part of the standalone application will be used by only that 
+ mechine.
+ it'consumes the lot of resources in client 
+ inistall and unistall will be done by user or client.
+ maintainance is very burden.
+ 
+ ==================================
+ 2)Mobile application:
+ The Applications  that are developed for the purpose of mobile applications 
+ and wireless devices  called as mobile applications.
+ the application will be developed depends platform used in the mobiles.
+ ===========================================
+ 3)Applets:
+ which is developed by using the Applets it's java application. with is runs on the client mechine with the 
+ help of the browers
+if we develop by using this we can face lot of the security issues.
+==================================
+4)WebApllication :
+which will developed by using the servlets and jsp and those will be execute in the
+any mechine with help of browser then it is called web application.
+=======================
+Static WebApplication:
+
+The content of the static web application will not be changed with respect to the client
+request .It is developed with the help of the Html.The content of this will be create
+before and prior the client request.
+================================
+DynamicWebApplication:
+content of the Dynamic web application will be cahnged according to the client
+request.it will be developed by using the servelts.the content of this will be
+created ofter the client request genarated.
+
+
+
+
+  
+ 

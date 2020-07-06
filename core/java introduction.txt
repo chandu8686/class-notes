@@ -1,0 +1,103 @@
+1)What is the Program ?
+A Program  can be defined as a  set of the Intstructions is exicuted by the mechine to reduce the burden of the user (or)developer.
+and performing the operations faster without making any mistakes.
+What is the Software ?
+Software can be difened as the set of the programs can be done the multiple tasks.
+Types of the Software ?
+System Software and the Application Software 
+
+
+What is the System Software ?
+System Software is designed to interact with the hardware to make them work then it callled as the 
+System Software .ex:different types of the "Os" Generallly its developed by using the C,C++ ...etc
+
+Application Software:
+The software is designed to Procees the data ,communicate the data,providing the Entertainement,and to Do the Bussiness like 
+ex:different types of the applications ...it is devloped by the using Java,.net...etc
+
+
+Applocation software is divided into the two types they are
+
+1) Standalone Software  2) Web application Software
+
+1) Standalone Software :
+A software which can be executed by the in the  context of a single mechine then it is called as the Standalone Software 
+ex:windows media player.Ms word
+
+2)Web  Application based Software :
+A software  which is executed in any mechine in the context of a browser 
+ex:fb,gmail...etc
+
+ 
+What is the Java?
+Java is a High level programing language.and it is also objectorientedPrograming language.
+
+What is the History of the java ? 
+and it was invented by the SunMicroSystem int 1991.with help help of james Gosling and his team.
+and then sun microsystem is acquired  by the Oracle.first it called as a GreenTalk .with having he extension of the 
+.gt and then it calledas Oak .then it called as the java .In 1995 it released the the first basic version .and the last update
+is JSE10 .
+ 
+In the 1995 Java Language is released in the 3 Edition they are. 
+
+
+1)JSE(Java Standard Edition)
+2)JEE(Java Enterprise Edition) 
+3)JME(java Mobile Edition)
+Every thing in the form of the API
+
+ApI:
+Api is Application Programing Interface
+It will generally cantataining the Packeges and Intefaces ,classes.
+The Implimentation of the API is called as the Software .
+We are having 2 Types if the API
+	1)Public API: Public Api is nothing but the Api is given by the One vendor The Implementaion can be done by any one.
+	2)Propretory Api(Private API):Public Api is nothing but the Api is given by the One vender The Implementaion can be done by same vendor.	
+
+Why the Java Became very Popular?
+Because of the Its providing Features. They are 
+
+1)Simple:
+>In java easy to develop the code and easy to compile and easy todebug and easy to execute them by the hwelp of the jvm.
+>Java will having the same syntax like that the other languages so we can easaly migrate from the other languages to java 
+>By the help of the java we can develop the maduler programs .then we can make themm as a reuseble code.
+>It's doesn't having the complex topics like pointers and Templets ana operator Overloading.
+>In java is the only responseble for the memory allocation .deallocation will be take care of the Garbage Collector.
+ 2)java is Object Oriented 
+>java languge is the object oriented language .if any language is said to be the object oriented language it's application should be 
+ developed by using the objects and the classes.
+ Ojbect :
+ The object can be defined as the Any Entity is Physically exist in the real world and requires some memory then it is 
+ calledas the Object.the Object will having the some properties and having the some actions properties is nothing but the 
+ data actions are the task(or)Operations performed by the  objects.
+ Class :
+ Class can defined as it is a combination fo the sum of the the common proeprties and coomon actions.
+ Class is a blue print for the how to create rhe objects.the class will be having the number ++++of objects but without the object 
+ we can write the class but the with out the class we can not the create the class.
+ ex:class--University
+ ex:Objects:KPRIT,MRCEW
+ 3)Secured :
+  >Security is very important to the every programing language.but in the java Inbuilt having the Security .thenit can protect
+   data from the  unauthorised users.
+  4)PlotForm Independent:
+  Java is the PlotFormIndependent language .because we can develop the program in any mechine .and then we can execute them 
+  in the any mechine with irrespective to the System operating System,and system architecture
+  
+  In the C language  is PlatformDependent language .because  we c program  will be developed in the one Mechine with extension
+  of the ".c" and then it will be compiled ,then compiler will be generated ".exe" file it will having the that system mechine
+  code so that execute before it will check their instructions then it will executed.because every system having the different types
+  instructions so it became plotformdependent.
+  ex:
+   
+
+
+
+
+
+
+
+
+
+ 
+ 
+

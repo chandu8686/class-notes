@@ -1,0 +1,33 @@
+
+note:By using the Cllable,PS,Batch we can increase the performance of application but small differences are 
+      there they depends where they using...
+
+How to do the batch execution..& what is the use of batchexecution..?
+ 
+ In previously...we are sending the request to the database it will consider as a new 
+  request in the database.then we can  get memory issue in database as well as also 
+  there will be load on network.we write the no queries and we can send it to database as a
+  single request by using the BatchExecution.
+
+  
+  
+  
+2)CallbleStatement also used to reduce the load on the  network then what is the difference
+   b/w CallbleStatement and BatchExecution ...?
+
+In CallbleStatement we will write the queries and bussiness logic in the database .
+it's always not recomended  to write the bussiness logic in the database .
+to overcame this jdbc interduce the Batch execution.   
+
+3) Simillarly PreparedStatement will also increase the performance but it when ever 
+  we have multiple "samequeries " then only we get the benifits of P.S other wise 
+  if  we get  every time new query it's also useless
+===========================
+Batch having the three types of methods they are like:
+void addBatch():this is used add the Query to batch Object
+int[] executeBatch():is is used to execute the batch 
+void clearBatch():used to clear the batch
+
+
+
+

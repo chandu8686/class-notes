@@ -1,0 +1,44 @@
+package info.com;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class StatementExample {
+
+public static void main(String[] args) {
+
+
+/*1. register the driver with DriverManager*/
+
+
+try {
+		
+
+DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+
+/*2.get the connection object by using the DriverManager*/
+
+
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/kadapaclg","root","root");
+
+/*3.create the statement object by using statement*/
+			
+			Statement st = con.createStatement();
+			/*4. create the query*/
+			 String query="create table student(srno int(20),sname varchar(20),sadd varchar(20))";
+		     int executeUpdate = st.executeUpdate(query);
+		     System.out.println("table has been created");
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}
+

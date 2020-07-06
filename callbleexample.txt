@@ -1,0 +1,85 @@
+callablestatement:	
+
+How to create the procedure and function ..?
+
+1.create or replace procedure procedurename()
+   as 
+   begin 
+   statements
+   sql queries 
+   bussiness logic 
+   end procedure
+   /
+   
+   
+   con.prepareCall("{myprocedure}")
+   
+   
+   
+   
+   -- --------------------------------------------------------------------------------
+-- Routine DDL
+-- Note: comments before and after the routine body will not be stored by the server
+-- --------------------------------------------------------------------------------
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetAllStudents`()
+BEGIN
+SELECT * FROM student;
+END
+
+
+
+how to call the stored procedure in database..?
+
+Syntax:
+CALL PROCEDURENAME
+ex:  CALL GetAllStudents 
+
+ we use the Callable state ments to reduce the burden (or) load on the  network .because Jdbc Program will 
+ send miltiple Queries to the DB.every is acts like a new request (or) separate Request.if program 
+ contains Multiple Queries .therefore multiple Requests.then automatically load will increase on network.
+ to solve this jdbc come up with the CallableStatement.because Procedure (OR) Functions  are resides in the 
+ database  server and executes in the database server.
+Procedure can have the two types of the paremeters.they are
+->I/PARAMETER:the I/PARAMETER will represent by the "IN"
+->O/Parameter:The O/PARAMETER will be represent as a "OUT"
+
+===================================================
+Difference btween the Procedure AND Function
+1)Procedure is used too execute the bussiness logic
+2)Procedure must not have return type
+3)procedure can return 0 (or) more values
+4)procedure  have input and output parameters
+5)procedure can call function
+6)procedure can use try and catch block or perform Exception Hanadiling
+7)procedure can not called from selected statements
+===========================
+
+2) function
+EX:
+
+create or replace function addition(fno in number,sno innumder)
+return number 
+as 
+tno numberl;
+begin
+tno:=fno+sno;
+return tno;
+end addition;
+/
+
+call like :
+
+          ("{?=call addition(?,?)}")
+	
+
+1)Function is used to perform calculation
+2)it must have return type
+3) it will return only one value
+4)functions have only i/parameters
+5)it's can't call procedures
+6)it will not perform E.Hadiling
+7)function can be called selected statement
+
+

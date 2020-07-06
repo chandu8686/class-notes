@@ -1,0 +1,53 @@
+How manay ways we can register the Driver....?
+we can register the Driver in 4Ways they are 
+1)By using the DriverManager
+2)By using the Class.forName
+3)By using the Predefined System Properties
+4)Automatic DriverRegistration
+===========================
+1)when register the Driver by using the Class.forName then that class will be loaded.
+  and  block of the that class will be loaded.
+  according to the Sun micro system who implementing the Driver Interface that 
+  class must be provide the static block.
+  ex:MySql:
+  public class Driver1 implements Driver{
+   static {
+   Driver D= new Driver();
+   DriverManager.registerDriver(d);
+   }
+   }
+   
+   ex2:Oracle
+   public  class OracleDriver implements Driver{
+     static{
+	 Driver d=new OracleDriver();
+	 DriverManager.registerDriver(d);
+	 }
+   
+ 2)PredefinedSystem properties:
+  public class Registration {
+
+	public static void main(String[] args) {
+		try {
+			
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ssiet","root","root");
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery("select * from student");
+ //////
+ 
+ java -Djdbc.driver=com.mysql.jdbc.Driver Registration
+ 
+ In above class we did not mentioned the first method.to estblish the connection 
+ we use get connection method belongs to DriverManager .to execute getConnection 
+ DriverManager class will having the static block it will load the Driver.
+ 
+ public class DriverManager{
+ static{
+ String driver=System.getPreperty(jdbc.driver);
+ Class.forName(driver);
+ }
+===========================================================
+-> 3)Automatic Registration 
+ we can add the driver to the class path. so we can register the DriverAutomatically.
+ 
+ 

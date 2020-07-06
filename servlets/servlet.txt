@@ -1,0 +1,85 @@
+Servelet :it's server side technology .which is used to develop the web application.by 
+          the help of html and css.
+	
+how to develop the Servlet Application...?
+if we want to develop the servlet application we need to implement the servlet directly 
+(or)  indirectly.
+A servlet Program can be Developed in 3 ways 
+1)Servelet program can be developed by implementing the ServletInterface.
+2)Servelet Program can be developed by extending Generic Servlet.
+3)Servelet Program can by extending the Http Servet.
+
+Servlet API is introduced in the JEE API.Servlet Api will providing two packages..
+
+1)Javax.Servlet package
+
+Interfaces
+1.1)Servlet
+1.2)ServletRequest
+1.3)ServletResponse
+1.4)ServletConfig
+1.5)ServletContext
+1.6)RequstDispatcher
+
+classes:
+1.1)Generic Servlet
+	
+
+2)Javax.http.servlet package
+Interfaces:
+
+
+2.1)HttpServletRequest
+2.2)HttpServletResponse
+2.3)HttpSession
+
+Classes:
+HttpServlet
+
+when we developing the servlet application we need to execute it's life cycle method's
+1)what are the life cycle methods in the Servlets..?
+
+1)public void init(ServletConfig config)
+2)public void service(ServletRequest,ServletResponse)
+3)public void destroy()
+4)public ServletConfig getServletConfig();
+5)public String getServletInfo();
+
+
+
+1)init()...
+
+  the init() method will execute only once.when the servlet object is created.
+  it will perform initilization job like constuctor.
+  or first request come from client to server.servlet object is created when the
+  client invoke appropriate servlet url invoke time. it will provide the some information 
+  or load data which help servlet lifetime.
+  
+  
+  2)service method:this method is the main method perform the actual operation(bussiness) 
+                   because when the request comes from the client the servlet container will
+				   call service method.it will create the request and response object
+				   process the request by checking the http(get,put,delte..) method and 
+				   provideng the response by calling the approprite action methods
+				   like doGet,doPost...and send response to client in the form of response 
+                    object
+3) destroy method():when ever we want remove the servlet from server container we call this 
+                   methods	
+.
+4)getServletConfig();
+return object of servletConfig().
+5)getServletinfo():this method returns descreption of servlet.
+				   
+   
+  
+  
+  
+  
+
+
+
+  
+	
+		  
+		  
+		  

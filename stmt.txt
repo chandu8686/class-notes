@@ -1,0 +1,19 @@
+Statement:
+1)when ever we want to exeucte the single query then we can use the 
+  Statement
+  2)it is  used to execute the Static queries
+  3)it will never increase the application performance.
+  4)every query is send send to the database it will treat 
+    as a new Query.
+  5)it will be create by using the createStatement();  
+
+
+PrepareStatement:
+1)when ever we want to execute the Multiple queries then we can use 
+  the  P.S
+ 2)it is used for executing the Dynamic Queries
+ 3)it will improve the application performance.
+ 4)every time we send the query to the database if the query 
+   object is already exist then it treat as old object execute directly 
+  last step.other wise it will perform the all 7 steps.
+5)it will create by using the prepareStatement();  

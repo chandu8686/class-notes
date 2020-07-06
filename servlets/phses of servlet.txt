@@ -1,0 +1,26 @@
+Phases of the Servelets:
+1)Instantiation Phases
+2)Initilization Phases
+3)Servicing Phase 
+4)Destroy Phase
+
+1)The servletContainer loads the servelet when client sends the request. after
+   loading the servet,the ServeletContainer will create instance of the servelet.
+   
+2)once the servelet will instantiated  then servelt will initilize the servelt by 
+ calling the init();before calling the init method it will create the servlet config
+object.it will contain the servlet initilization data.it will avilable up to servlet
+destroy phase. 
+
+3)service method();
+once the servlet is done the first two phases,servlet is ready to serve the request.
+to service the request the servlet container will call the service method.before 
+invoking the service();,ServletContainer will create the Request object and Response
+Object.Servlet request will contain the user information (or ) data send by 
+client.by using this we can retrive the data and process teh request .and get the 
+response data from database and dump the those data into ServeltRespnse Object.
+send back to client.
+4)ServletDestroy Phase:
+when the servlet is no longer required for servicing the request tehn the servlet
+Container will invoke destroy().before servlet is destroyed all resources associated
+with the servlet will be released.

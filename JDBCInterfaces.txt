@@ -1,0 +1,37 @@
+Statement :
+
+1.if you execute query only one time then we use the Statement
+2.By using the stetement we can not increase the Performance of Application
+3.It will execute only Static Queries
+4.Every time it treat query as a new Querry
+5.statement will not accept the run time values
+
+PreparedStatement:
+
+1.when ever we want to execute the multiple queries we will use the PrepareStatement
+2.By using this we can increase the application performance
+3.it will execute the Dynamic Queries
+4.when ever the query hit the database  first it will check the query exist or not 
+   if query is exist it will execute that query only.
+5.it will accept the run time values  
+   
+   
+   4.SQL Queries :                   
+   4.1 Select Queries
+       ResultSet executeQuery();   
+   NonSelect Query Method:
+   int executeUpdate();
+   
+   
+   
+   4.2 Non Select Queries
+        int executeUpdate();
+       
+   
+   int i=st.executeUpdate();
+   if(i>0){
+   
+   
+   }
+   
+   

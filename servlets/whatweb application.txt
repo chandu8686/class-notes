@@ -1,0 +1,65 @@
+1)what are the things we need to develop the web applications..?
+  1.1)webresources
+  1.2)web components
+  
+  
+  what is the web resources....webresources like html and photos and css...
+  what is the web components......web components are created by ....servlets and jsp..
+  we can not create the web appliations by using the web resources and they help the 
+  other programs to build the web appliations...
+  
+  
+  so in order to communicate client software and the server software we need medium like http
+  ptotocall(hypertext transmession protocall).http is specification for the how to costruct 
+  the request object.and send it to server and ofter process the response object.and give it
+  back to client.it's open specification comes under the TCP/IP model.
+  
+  
+  In HTTP Protocol will divided into two types as per the serving...
+  
+  1)HTTP Request Object Format
+  2)HTTP Response Object Format
+  
+  /
+  
+  1)HTTP Request Format:                        
+  1.1)line of request. 
+  line of request will be divided into three types...they are 
+  
+  methode         uri(requested resource)     version/protocol
+  get,put,         /homepage                  http/1.2
+  delete,post..
+  
+  
+  1.2)Request headers
+  
+  request header also devided into two types they are like
+  request headername                        headervalue
+        
+	user-agent:mozilla/5.0  
+        context-type:text/html.
+ 
+ 1.3)blankline
+  1.4)Request Body
+  
+  
+  Response Format:
+  
+  1)line of response
+    it's also same 
+	
+	protocol/version         status code                status msg
+                            http/1.2	        100-199              getting information
+                                                                   200-299              succuss 
+			        300-399              redirecting 
+			        400-499              client side error
+			        500-599              server side error 
+  
+  2)response headers
+  3)blank line
+  4)response body
+  
+  
+
+
+

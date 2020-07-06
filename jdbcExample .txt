@@ -1,0 +1,33 @@
+oracle :
+
+     new oracle.jdbc.driver.OracleDriver();
+	 
+	 
+url: "jdbc:oracle:thin:@localhost:1521:xe","username","password"	 
+
+
+Mysql:
+    new com.mysql.jdbc.Driver();
+	
+url:jdbc:mysql://localhost:3306/databasename","username","password"	
+
+
+
+
+
+	
+
+	
+Selection :it is a process of reading (or )accessing particular records in the database.
+               based on a condition
+projection :projection is a process of the accessing particular columns or all columns 
+             in any order from the database.
+			 
+alias name :Alias name is nothing but a giving the alternative name particular columns
+             in the result set
+             	 
+	
+	
+	
+	
+	

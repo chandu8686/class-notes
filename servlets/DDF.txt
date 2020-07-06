@@ -1,0 +1,13 @@
+<web-app>
+<servlet>
+<servlet-name>reg</servlet-name>
+<servlet-class>info.com.RegesterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>reg</servlet-name>
+<url-pattern>/reg</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
+@WebServlet("")

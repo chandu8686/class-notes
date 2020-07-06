@@ -1,0 +1,60 @@
+ jdbc Api  
+
+
+
+1.java.sql  
+                                                 1.javax.sql   
+
+   Interfaces:                                   Interfaces:    
+   1.1.Driver                                    1.1.RowSet
+   1.2.Statement
+   1.3.Connection                                1.2.DataSource 
+   1.4.PreparedStatement                         
+   1.5.CallableStatement                         2.Classes.                           
+   1.6.ResultSet                                 2.1.RowSetEvent
+   1.7.ResultSetMetaData
+   1.8.DatabaseMetaData
+   
+   
+   2.Classes:
+   2.1.DriverManager
+   2.2.Types
+   2.3.Date
+   2.4.Time   
+
+how to develop a jdbc Program :
+1.we need register the our driver DriverManager.
+2.We need To create the connection object.which will help you to establish the connection with database.
+3.Create the statement object By using either Statement ana PreparedStatement,callable Statement
+4.executing the queries with statement object.
+5.Get ResultSet if we needed.
+6.close the connection.
+
+
+
+
+To register the Driver,DriverMnager is providing the Static method "registerDriver();"  
+it will be register the Driver.therefore it can directly call the "Driver"
+registerDriver();it' expects one parameter of Driver Object  Here the Driver is an interface so 
+we can no create the Object for Interface.so we can take the help of implementation class like.
+
+To estblish the connction b/w Database server and Client they need a connection.which will get by calling
+getConnection(); a static method is avilable in DriverManager so the need some Parameter to get Connection 
+it'expect three parameters they are URL:USERNAME:PASSWORD
+
+URL : every database will having the different url depends on their implementation given in the Documentation.
+
+URL:is three parts they like 
+suppose ex:for OracleDatabase
+
+oracle:jdbc:thin:ipAddress:port no:servive name
+
+
+Ipaddress will tells us where the mechine is running in the network
+port will help us to find or lacate the program 
+service name giving the name to the service
+
+
+
+
+

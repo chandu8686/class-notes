@@ -1,0 +1,81 @@
+ServletConfig:
+
+Whenever the client sends the first request to the server, the server will look into 
+the web.xml and finds out the servlet  that has to be executed. When the servlet has 
+to be executed, The servlet has to be loaded into the server memory and then the object
+of that servlet will be created.
+
+whenever the server creates an object of any servlet, an object of sevletconfig will 
+also be created. When the servlet is destroyed, the servlet object will be removed 
+from the server and when the servlet object is removed from the server, its associated
+servletconfig object will be removed from the server.
+
+A server can contain multiple applications and every application can contain multiple
+servlets but every servlet will have its own servletconfig object.
+
+The purpose of the servletconfig is to provide some initialization to the servlet. 
+The data available in the servletconfig object with can be accessed by only that servlet
+which is associated with the servletconfig object, the other servlets cannot access 
+the data.
+
+To store the data in the servletconfig object we can take the help of tag called
+<init-param> which is subtag of <servlet>.
+
+Syntax:
+<init-param>
+<param-name>name</param-name>
+<param-value>value</param-value>
+</init-param> 
+
+For Example:
+<init-param>
+<param-name>sname</param-name> 
+<param-value>vamsi</param-value>
+</init-param>
+
+
+ServletContext:
+--------------
+the servletContext object is a global object for the entire web applicatin. The data
+available in the servletContext objectcan be accessed by all the servlets available
+in the application. The ServletContext object will be created by the server when the
+applicatin is deployed and it will be existing as long as the application is available
+in the server. The ServletContext object will be removed from the server when the 
+application is undeployed from the server.
+
+The number of sevletconfig objects will be equal to the number of servlets available
+in the applicatin. The numberof servletContext objects will be equalto the number of
+applications available in the server.
+
+The servletContext object will be available in the server even before the first request
+comes to the server. The servletContext can be considered as a shared information
+repository, Where the data can be stored into the servletContext object by one servlet
+and accessed by another servlet.
+
+We can store the data into servletContext object in 2 ways:
+-> During the servletContext object creation time
+-> After the servletContext is created
+by using the context -param we can store the data inthe ServeltContext Object .
+
+
+Note:ServletContext Object is teh Global Object any Servlet Can use that .
+Synt:
+<contax-param>
+<param-name>name</param-name>
+<param-value>value<param-value>
+<context-param>
+
+
+
+we can read the Data from the ServeltContext by using the getInitParameter();
+or  ();
+
+We can create servletContext in two ways:
+
+servletConfig config = getservletconfig();
+servletContext con =config.getservletcontext();
+
+we can access the data from servletConfig by using getAttribute() ; string name 
+getAttribute(String name);
+
+

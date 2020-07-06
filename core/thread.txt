@@ -1,0 +1,39 @@
+String :
+=========
+String is a Predefined class used to store to the group of the cahrcters.
+The String having the different types of the methods
+=============================================================================
+Multitasking :
+the Process is is executing the mulitask in same time is called multitasking.then by using of the this we use time optimum way.
+The processs is the loading,unloading  into the Memory is called as ContextSwtching.in this multitasking time is divided into the slots for the every task
+then it is called as time slicing.
+TheADvantages of the Multitaaasking is reduce the wating time and increasing the response time .then automatically the performance of the 
+ application will be more .
+ Multitasking are the two types they are 
+ 1) process based the multitasking.
+ the Processor will be execute the different proceses with in the same time is called the process based multitasking.
+ So in this every process is indipendent each other and they having the own resources .
+ 
+ 
+ 
+ 
+ 2)thread based Multitasking.
+ 
+The Thread based multi tasking can be defined as the different parts of the same process can be executed simalteneously with in thw 
+same time is called the thread based multitasking but they share the same set of the resources.
+*Thread is saparate piece of code and it executed saperatly.
+
+abstraction the abstraction is can be defined as the 
+ it is giving the usefull information and hide unnecessary data that would be help u to
+reduce the code complexcity and increase the code performance.
+
+
+What is the inheritence ?
+the inheritence is nothing but  aquering the one class numbers into the another class is called as the inheritence.
+  compile time errors ?
+ 
+
+ the errors will be occured due to the syntstical mistakes then it called as the compile time errors 
+  Run time errors ?
+  the errors wil be occured  due to the programing failure or jvm failure then it is called as the run time errors;
+  

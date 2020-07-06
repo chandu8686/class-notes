@@ -1,0 +1,48 @@
+Request DisPatching:
+it is th process of dispatching (or) transfering request from one servlet to another Servlet
+In the process RequestDispatching the request will be partially process by the first 
+servlet and the controll will be transfer to the second servlet.and second servlet is
+responsible for the sending response to the user .
+ because of this we can achive the inter communication between the servlets.
+ To do this we need RequestDispatcher Object.so we can get this Object by getRequestDispatcher();
+ 
+ 
+ 
+ 
+ Syntax :
+ RequestDispatcher dis=context.getRequestDispatcher();
+ dis.forword(request,response);
+                (or)
+ RequestDispatcher dis=context.getRequestDispatcher();
+ dis.include(request,response);
+ 
+ forword(request,response):In this method  first servlet is process the requst to the second
+                       servlet second servlet is send the response to the client.
+					   
+	include(request,response):in this project first servlet process the request to 
+                               secondServlet and servlet will process the request and send 
+                                back to first servlet and first servlet will send the response 
+                                 to client.								
+sendRedirect:
+we use  sendredirect to transfer the controll from one resource to the another resource.
+The request Dispatcher will do same thing .but there is small difference.if resource 
+avilable in the same application then there only RequestDispatcher will work other 
+wise it will not work.if resource avilable in the same server but in different 
+application,(or) resource avilable in the different application in teh different 
+server then we use the  sendRedirect();
+
+syntax:
+response.sendRedirect("String location");
+
+ 					   
+					   
+					   
+					   
+					   
+					   
+					   
+					   
+					   
+					   
+ 
+ 

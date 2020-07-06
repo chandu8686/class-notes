@@ -1,0 +1,19 @@
+Data Gathering Logic:  here we will gather the client information like details of client
+                       from data and request headers by using the request object.
+					   
+FormValidation Logic:  here we will check the pattern and format of the entered data.
+
+SessionManagementLogic: here we will store the client information for the perticular 
+                        session to perform the next task up to close the session.
+						
+bussiness logic:       here we will process the request and provide the response.
+
+persistance logic:     here we will write the code for database operations.
+ 
+middleware Services: this for the additional task like to provide Connection Pooling,
+                     thread pooling,security...etc.
+					 
+presentation Logic: here we write the USERINTERFACE .                    					 
+					             
+ 
+                           

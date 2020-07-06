@@ -1,0 +1,30 @@
+Statements:
+1.Statement 
+2.PreparedStatement
+3.CallbleStatement
+Note:Statement and P.Statement are used to execute the basic queries,where 
+CallbleStatement is used to execute the stored Procedures and functions
+
+
+ResultSet:
+-> when ever the we execute select query for obtain the records it will give the 
+   ResultSet Object if we try to print that Object it's give hashCode of the that object.
+-> Suppose if want the data inside of the result set Object .it is programmer responsebility 
+   like read data from Object.
+-> when ever jdbc program execute the query then the query will forword to the jdbc Driver 
+   through jdbc program then jdbcDriver will forword the request(query) to database.DB
+   will process the Query and retrive the records and forword those to JdbcDriver.
+   Jdbc Driver will Create ResultSetObject and put all the record inside ResultSet and 
+   forword to the Jdbc Program.remaining work has bees been done by the programmer(read data)
+   ResultSetObject will associated with the pointer called "ResultSetPointer" which will be 
+   default possinated before first record.
+-> as the programmer we need move curser.by using boolean next();
+-> if we move to the approprite record we can read the data by using getxx()methods
+   getxx(String columnName)
+   getxxx(int columnindex)
+   
+   
+ 
+
+
+

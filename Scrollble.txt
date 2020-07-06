@@ -1,0 +1,98 @@
+when ever we want to execute the queries by using the Statement first we need to create 
+createStatement() object.by using the statement object we can retrive the data in the form
+of ResultSet Object.[this object is NonScrollable and NonUpdatable..].
+
+Q1)how we can access the data in both direction & how access the data randomly..?
+Q2)how update the database records with out using the Queries...?
+
+
+Ans) To solve the above problems we need to create scrollble and updatable resultset..
+     it will take two parameters they resultSetype it will scroll the resultset.
+     and second one is result set concurrency by using this we can update the result set.
+ 
+
+syntax:
+
+ createStatement(int resultSetType,int resultSetConcurrency)
+
+
+ 
+ int resultSetType is classified into two types :  
+ 
+ 1)TYPE_SCROLL_SENSITIVE
+ 2)TYPE_SCROLL_INSENSITIVE
+ 3)TYPE_FORWORD_ONLY
+ 
+ int resultSetConcurrency:
+ 
+ 1)CONCUR_READ_ONLY(by using this we can read the recods only )
+ 2)CONCUR_UPDATABLE(by using this we can update teh records)
+ 
+ 
+ 
+ 
+ Q3)what is the difference between the TYPE_SCROLL_SENSITIVE & TYPE_SCROLL_INSENSITIVE..?
+ 
+ In TYPE_SCROLL_INSENSITIVE we will get the snapshot of the database any modification or 
+ done before or ofter the execution of the query in the database it will not reflect into
+ in the current list.
+ In TYPE_SCROLL_SENSITIVE  any modification done in the table it will reflect into user
+ accessed data .it will come up with special pointer .it will always pointing to the 
+ records in database.if we want use this we need primary key in field.
+ 
+ 
+ 
+ different types of methods:
+ 
+ 1)absolute(int row):this method will move to exact record.
+ 2)first():it will place the first record
+ 3)last():it will place the pointer at last record
+ 4)previous():it will give the previous record
+ 5)relative(int count):it will move the curser either forword or backword directions
+ 6)beforeFirst(): it will move the curser to the before first record
+ 7)afterLast(): it will move the curser to the  afterlastrecord
+ 8)getRow() : it will give you the exact record
+9)refreshRow():it will refresh the record
+10)delete():delete the record
+
+
+  
+ .....extra
+ 
+ 
+ 
+ 
+ 
+ Int resultSetConcurrency:
+ 
+ update :
+ 
+ two methods :
+ 
+ go to exact record :rs.absolute();
+ then update record :updatexx();
+ then call update method:update();
+ 
+ 
+ for delete:
+ absolute();
+ deleteRow();
+ 
+ 
+ 
+ for insert ;
+ rs.moveToInsert();
+ updatexxx();
+ rs.insertRow();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

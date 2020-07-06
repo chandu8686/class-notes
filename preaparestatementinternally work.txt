@@ -1,0 +1,30 @@
+How  PreparedStatement  will work internally..?
+
+step-1:  when ever we send the query to the database server by using prepared statement
+         then it will first check in the database server cache memory whether the 
+         query is exist or not .if not it will load it into server memory.other wise it will 
+         perform last step
+		 
+
+step -2:it will check the syntax of the query
+
+step-3 :database server will check whether any object is required to execute the query
+
+step-4:the query will be converted(compiled) into the database understandble language
+
+step-5:the database server will be create the different types of the algarithms to 
+       execute the different types of operations on database
+step-6:the compiled query  and the algarithms  will be loaded into the database
+step-7:database server will be pick up the appropriate algarithms for current sutuation and the 
+        execute the query.
+ 
+ 
+ 1.
+ 2.
+ 3.
+ st.addBatch("insert into student (21,'bunny','guntur') ");
+		    st.addBatch("insert into student (21,'sunny','vizag') ");
+			int[] i = st.executeBatch();
+			if(i.length>0){
+				System.out.println("records are inserted");
+ 				
